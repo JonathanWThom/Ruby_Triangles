@@ -1,0 +1,7 @@
+<h1>What kind of triangle?</h1>
+
+<% if @triangles.type() == false %>
+  <h5>Those side lengths don't make a triangle</h5>
+<% else %>
+  <h5>It is a <%= @triangles.type() %> triangle</h5>
+<% end %>
