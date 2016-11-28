@@ -2,6 +2,8 @@
 
 <% if @triangles.type() == false %>
   <h5>Those side lengths don't make a triangle</h5>
+<% elsif @triangles.type() == "scalene" %>
+  <h5>It is a scalene triangle</h5>
 <% else %>
-  <h5>It is a <%= @triangles.type() %> triangle</h5>
+  <h5>It is an <%= @triangles.type() %> triangle</h5>
 <% end %>
